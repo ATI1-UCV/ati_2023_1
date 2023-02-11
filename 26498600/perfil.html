@@ -6,15 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="http://www.ciens.ucv.ve/portalasig2/favicon.ico" type="image/x-icon"> 
     <title>Alexanyer Naranjo</title>
+    <style>
+        .body {
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .container__image .image {
+            border-top-left-radius: 60px;
+        }
+
+        .container__content {
+            margin-left: 20px;
+            padding: 20px;
+            border: 2px solid #777;
+            border-radius: 30px;
+            box-shadow: 5px 5px 20px #CCC;
+        }
+
+        .container__content h1 {
+            color: #229395;
+        }
+
+        .container__content .description {
+            font-family: monospace, sans-serif;
+            font-size: 1.25rem;
+        }
+
+        .container__content a {
+            color: orange;
+        }
+        
+        .container__content a:visited {
+            color: red;
+        }
+    </style>
 </head>
-<body style="padding: 20px;">
-    <div style="display: flex;">
-        <div>
-            <img src="./26498600.jpg" alt="Alexanyer Naranjo" height="420">
+<body class="body">
+    <div class="container">
+        <div class="container__image">
+            <img class="image" src="./26498600.jpg" alt="Alexanyer Naranjo" height="420">
         </div>
-        <div style="margin-left: 20px;">
-            <h1 style="color: #229395;">Alexanyer Naranjo</h1>
-            <p style="font-family: monospace; font-size: 1.25rem;"><i>Soy estudiante de Informática en la Universidad Central de Venezuela donde he tenido la oportunidad de ser formador en múltiples asignaturas, como Algoritmos y Estructuras de Datos y Probabilidad y Estadística. Trabajo como Desarrollador Frontend en la creación de aplicaciones web y móviles. Teniendo experiencia en el manejo de tecnologías como: React.js, Vue.js, React Native, Ionic, y actualmente, aprendiendo sobre Dart y Flutter. Finalmente, he tenido la oportunidad de formar una comunidad tanto en Twitter como en YouTube que cuenta con +50K seguidores, donde me dedico a la difusión de recursos, materiales y tutoriales sobre el mundo de la programación.</i></p>
+        <div class="container__content">
+            <h1>Alexanyer Naranjo</h1>
+            <p class="description"><i>Soy estudiante de Informática en la Universidad Central de Venezuela donde he tenido la oportunidad de ser formador en múltiples asignaturas, como Algoritmos y Estructuras de Datos y Probabilidad y Estadística. Trabajo como Desarrollador Frontend en la creación de aplicaciones web y móviles. Teniendo experiencia en el manejo de tecnologías como: React.js, Vue.js, React Native, Ionic, y actualmente, aprendiendo sobre Dart y Flutter. Finalmente, he tenido la oportunidad de formar una comunidad tanto en Twitter como en YouTube que cuenta con +50K seguidores, donde me dedico a la difusión de recursos, materiales y tutoriales sobre el mundo de la programación.</i></p>
             <ul>
                 <li>Mi color favorito es: Morado</li>
                 <li>Mi libro favorito es: En Búsqueda de Alaska</li>
