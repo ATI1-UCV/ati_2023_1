@@ -4,13 +4,56 @@
         <meta charset="UTF-8">
         <title> Fernando Mazzaro</title>
         <link href="../18446241/favicon.ico" rel="icon" type="image/x-icon" />
+
+        <style>
+            * {
+                background-color: beige;
+            }
+            h1 {
+                color: brown;
+                font-size: 300%;
+            }
+            h1 + p {
+                font-family: courier;
+                font-style: italic;
+            }
+            img {
+                float: left;
+                width: 300px;
+                border-top-left-radius: 50px;
+            }
+            td {
+                padding-right: 5px;
+            }
+            .negritas {
+                font-weight: bold;
+            }
+            #tarjeta {
+                border-style: solid;
+                border-width: 1px;
+                box-shadow: 5px 10px #aaaaaa;
+                margin-left: 310px;
+                padding-left: 5px;
+                max-width: 600px;
+            }
+            a {
+                color: orange;
+            }
+            a:visited {
+                color: red;
+            }
+        </style>
     </head>
+
+
     <body>
-        <div align="left"><img src="../18446241/18446241.jpg" width="300" style="float:left;"></div>
         <div>
-            <h1 style="color: brown; font-size:300%;">Fernando Mazzaro</h1>
-            <p style="font-family:courier;">
-                <i>Soy estudiante de computacion. Trabajo como consultor en la gestion de procesos de negocios (BPM), he trabajado en proyectos con diferentes clientes (Cantv, Servicio PanAmericano, Fondo de Valores Inmoviliarios, entre otros). </i>
+            <img src="../18446241/18446241.jpg">
+        </div>
+        <div id="tarjeta">
+            <h1>Fernando Mazzaro</h1>
+            <p>
+                Soy estudiante de computacion. Trabajo como consultor en la gestion de procesos de negocios (BPM), he trabajado en proyectos con diferentes clientes (Cantv, Servicio PanAmericano, Fondo de Valores Inmoviliarios, entre otros).
             </p>
             <table>
                 <tr>
@@ -30,11 +73,11 @@
                     <td>Los de aventura y shooters</td>
                 </tr>
                 <tr>
-                    <td><b>Lenguajes aprendidos: </b></td>
-                    <td><b>javascript, SQL, groovy</b></td>
+                    <td class="negritas">Lenguajes aprendidos: </td>
+                    <td class="negritas">javascript, SQL, groovy</td>
                 </tr>
             </table>
-            <p>Si necesitan comunicarse conmigo me pueden escribir a: <a href="mailto:fernando.mazzaro.m@gmail.com">fernando.mazzaro.m@gmail.com</a></p>
+            <p>Si necesitan comunicarse conmigo me pueden escribir a: <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=fernando.mazzaro.m@gmail.com" target="_blank">fernando.mazzaro.m@gmail.com</a></p>
         </div>
         
     </body>
