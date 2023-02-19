@@ -1,0 +1,44 @@
+#tarjeta h1 , p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h1 {
+    color: brown;
+    font-size: 300%;
+    font-family: Times New Roman;
+}
+h1 + p {
+    font-family: courier;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+img {
+    float: left;
+    width: 300px;
+    border-top-left-radius: 50px;
+}
+td {
+    padding-right: 5px;
+    padding-bottom: 3px;
+}
+.negritas {
+    font-weight: bold;
+}
+#tarjeta {
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 5px 10px #aaaaaa;
+    margin-left: 310px;
+    padding-left: 5px;
+    max-width: 700px;
+    min-height: 400px;
+}
+a {
+    color: orange;
+}
+a:visited {
+    color: red;
+}
+table tr td, p{
+    font-family: Times New Roman
+}
