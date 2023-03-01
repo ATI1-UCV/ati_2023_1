@@ -2,7 +2,7 @@ config = {
 	"sitio": ["ATI","[UCV]","2022-1"],
 	"home": "Início",
 	"login": "Sessão",
-	"copyRight":"Copyright © 2022 Escola de informática - ATI. Todos os direitos reservados",
+	"copyRight":"Copyright © 2023 Escola de informática - ATI. Todos os direitos reservados",
 	"nombre":"Nome",
 	"descripcion":"",
 	"color":"Minha cor favorita é",

@@ -2,7 +2,7 @@ config = {
 	"sitio": ["ITA","[UCV]","2022-1"],
 	"home": "Home",
 	"login": "Login",
-	"copyRight":"Copyright © 2022 Computer school - ITA. All rights reserved",
+	"copyRight":"Copyright © 2023 Computer school - ITA. All rights reserved",
 	"nombre":"Name",
 	"descripcion":"",
 	"color":"My favorite color is",
