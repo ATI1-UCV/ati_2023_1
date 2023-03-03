@@ -91,3 +91,7 @@ footer {
   font-size: 9pt;
 }
 
+.error {
+  text-align: center;
+  color: #86b1ef;
+}
