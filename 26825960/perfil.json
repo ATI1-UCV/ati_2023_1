@@ -1,0 +1,14 @@
+{
+    "nombre": "Alejandra Giannattasio",
+    "descripcion": "Soy estudiante de 6to semestre de Ciencias de la Computación en la Universidad Central de Venezuela. Durante mi estadía en la facultad he tenido la oportunidad de dictar clases a los estudiantes del primer semestre de la carrera en Introducción a la Informática. En el ámbito laboral me desempeño como diseñador gráfico, diseñador UI/UX y desarrollador Frontend desde hace más de dos años. Siempre busco innovar con diseños funcionales y sencillos que permitan al usuario interactuar de manera óptima con el proyecto a construir, teniendo en cuenta también las tecnologías y componentes utilizados por el equipo frontend con el fin de facilitar su trabajo adaptando los diseños a las tecnologías que mejor se adapten a ellos. Como diseñador de contenidos digitales para redes sociales, busco adaptar la imagen de la empresa dentro del mundo digital.",
+    "color": "Morado",
+    "libro": "El Psicoanalista (John Katzenbach)",
+    "musica": "Pop",
+    "video_juego": ["Mario Kart","Mortal Kombat"],
+    "lenguajes": ["Python", "JavaScript"],
+    "email": "alegiannattasioxd@gmail.com",
+    "ci": "26825960",
+    "genero": "Femenino",
+    "fecha_nacimiento": "25/07/1998",
+	"imagen": "26825960.jpg"
+}
