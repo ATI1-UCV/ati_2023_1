@@ -1,0 +1,14 @@
+let perfil = {	
+	"nombre":           "Fernando Mazzaro",
+	"descripcion":      "Soy estudiante de computacion. Trabajo como consultor en la gestion de procesos de negocios (BPM), he trabajado en proyectos con diferentes clientes (Cantv, Servicio PanAmericano, Fondo de Valores Inmoviliarios, entre otros).",
+	"color":            "Negro",
+	"libro":            "El psicoanalista",
+	"musica":           "Rock",
+	"video_juego":     ["Aventura", "Shooters"],
+	"lenguajes":       ["JavaScript","SQL","groovy"],
+	"email":            "fernando.mazzaro.m@gmail.com",
+	"ci":               "18446241",
+	"genero":           "Masculino",
+	"fecha_nacimiento": "15/12/1988",
+	"imagen":           "18446241.jpg"
+}
