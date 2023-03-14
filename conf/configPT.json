@@ -1,5 +1,5 @@
 config = {
-	"sitio": ["ATI","[UCV]","2022-1"],
+	"sitio": ["ATI","[UCV]","2023-1"],
 	"home": "Início",
 	"login": "Sessão",
 	"copyRight":"Copyright © 2023 Escola de informática - ATI. Todos os direitos reservados",

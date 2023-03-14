@@ -1,41 +1,95 @@
-document.title                                       = `${config.sitio[0]} ${config.sitio[1]} ${config.sitio[2]}`; 
-document.getElementsByTagName("footer")[0].innerText = config.copyRight;
-document.getElementsByClassName("logo")[0].innerHTML = `${config.sitio[0] } <small>${config.sitio[1]}</small> ${config.sitio[2]}`;
+// Callback function
+const filterList = (filter) => {
+    let length = filter.length
+    let filteredListado = length === 0
+    ? listado
+    : listado.filter(
+        person => person.nombre.slice(0, length).toLowerCase() === filter.toLowerCase()
+    )
+    
+    if(filteredListado.length === 0)
+    {
+        document.getElementsByTagName("ul")[1].innerHTML = config.error_busqueda.replace("[query]", filter)
+    }
+    else
+    {
+        let personsToShow = filteredListado.reduce( (acc, current, currentIndex) => {
+            if(currentIndex == 0)
+            {
+                return acc += `<li class="carousel-item col active">
+                                    <img src="./${current.imagen}"> 
+                                    <a> ${current.nombre} </a>
+                               </li>`
+            }
+            return acc += `<li class="carousel-item col">
+                                <img src="./${current.imagen}"> 
+                                <a> ${current.nombre} </a>
+                            </li>`
+        } , " ")
+    
+        document.getElementsByTagName("ul")[1].innerHTML = personsToShow
+    }
+}
 
-const searchbar_items           = document.getElementsByTagName("input");
-searchbar_items[0].placeholder  = config.searchbar_placeholder;
-searchbar_items[1].value        = config.buscar;
+// Set title text
+document.getElementsByTagName("title")[0].innerHTML =  
+    config.sitio[0]  +  config.sitio[1] + " " + config.sitio[2]
 
-const saludo_element            = document.getElementsByClassName("saludo")[0];
-saludo_element.innerHTML        = `${config.saludo}, ${saludo_element.innerHTML}`;
+// Set logo text
+document.getElementsByClassName("logo")[0].innerHTML =  
+    config.sitio[0]  + "<small>" + config.sitio[1] + "</small> " + config.sitio[2]
 
-const students_ul               = document.getElementsByTagName("ul")[1];
-listado.forEach(student => {
-    students_ul.append(document.createElement("li"));
-    students_ul.lastChild.innerHTML = "<img src=\""+student.imagen+"\"> <a href=\"\">"+student.nombre+"</a>";
-});
+// Set greeting text
+document.getElementsByClassName("saludo")[0].innerHTML = config.saludo + ", Alexanyer Naranjo"
 
-const form = document.getElementsByTagName("form")[0];
-form.addEventListener('submit', e => {
-    e.preventDefault();
-});
+// Set inputs texts and listener
+let busqueda = document.getElementsByClassName("busqueda")[0]
+busqueda.getElementsByTagName("input")[0].placeholder= config.nombre
+busqueda.getElementsByTagName("input")[0].addEventListener("keyup", (event) => {
+    filterList(event.target.value)
+})
+busqueda.getElementsByTagName("input")[1].value = config.buscar
 
-searchbar_items[0].addEventListener('change', input =>{ 
-        students_ul.innerHTML = '';
-        
-        listado.map(item => {
-                if (item.nombre.includes(input.target.value)){
-                    students_ul.append(document.createElement('li'));
-                    students_ul.lastChild.innerHTML = "<img src=\"" + item.imagen + "\"> <a href=\"\">" + item.nombre + "</a>";
-                }
-            } 
-        );
+// Set footer text
+document.getElementsByTagName("footer")[0].innerHTML = config.copyRight;
 
-        if (!students_ul.innerHTML){
-            const error_element = document.createElement('div');
-            error_element.innerHTML = `No hay alumnos que tengan en su nombre: ${input.target.value}`;
-            error_element.classList.add("msg_error");
-            students_ul.append(error_element);
+// Set initial students list
+let persons = listado.reduce( (acc, current, currentIndex) => {
+    if(currentIndex == 0)
+    {
+        return acc += `<li class="carousel-item col active">
+                            <img src="./${current.imagen}"> 
+                            <a> ${current.nombre} </a>
+                       </li>`
+    }
+    return acc += `<li class="carousel-item col">
+                        <img src="./${current.imagen}"> 
+                        <a> ${current.nombre} </a>
+                    </li>`
+} , " ")
+
+
+//JQuery
+$(".carousel-inner").append(persons)
+
+$(".carousel").carousel({ interval: 40000 });
+
+$('#studentsCarousel').on('slide.bs.carousel', function (e) {
+    var $e = $(e.relatedTarget);
+    var idx = $e.index();
+    var itemsPerSlide = 5;
+    var totalItems = $('.carousel-item').length;
+    
+    if (idx >= totalItems-(itemsPerSlide-1)) {
+        var it = itemsPerSlide - (totalItems - idx);
+        for (var i=0; i < it; i++) {
+            // append slides to end
+            if (e.direction=="left") {
+                $('.carousel-item').eq(i).appendTo('.carousel-inner');
+            }
+            else {
+                $('.carousel-item').eq(0).appendTo('.carousel-inner');
+            }
         }
     }
-);
+});
