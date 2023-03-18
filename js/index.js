@@ -13,13 +13,14 @@ document.getElementsByTagName("footer")[0].innerText = config.copyRight;
 
 /////////Section/////////
 //Tarjetas
-let seccion = document.getElementsByTagName("section")[0];
+let carrusel = document.getElementsByTagName("div")[0];
 
 for(let i in listado){
                         console.log("a")
-    seccion.append(document.createElement("ul"));
-    seccion.lastChild.append(document.createElement("li"));
-    seccion.lastChild.lastChild.innerHTML = '<img src="' + listado[i].imagen + '"><a href="">' + listado[i].nombre + '</a>';
+    carrusel.append(document.createElement("ul"));
+    carrusel.lastChild.classList.add("carousel-item");
+    carrusel.lastChild.append(document.createElement("li"));
+    carrusel.lastChild.lastChild.innerHTML = '<img src="' + listado[i].imagen + '"><a href="">' + listado[i].nombre + '</a>';
 };
 
 //Buscador
@@ -27,24 +28,38 @@ let buscador = document.getElementsByTagName("input")[0];
 
 buscador.addEventListener("change", buscar);
 function buscar() {
-    seccion.innerHTML = "";
+    carrusel.innerHTML = "";
     listado.forEach(bus => {
         if (bus.nombre.toUpperCase().includes(buscador.value.toUpperCase())) {
-            seccion.append(document.createElement("ul"));
-            seccion.lastChild.append(document.createElement("li"));
-            seccion.lastChild.lastChild.innerHTML = '<img src="' + bus.imagen + '"><a href="">' + bus.nombre + '</a>';
+            carrusel.append(document.createElement("ul"));
+            carrusel.lastChild.classList.add("carousel-item");
+            carrusel.lastChild.append(document.createElement("li"));
+            carrusel.lastChild.lastChild.innerHTML = '<img src="' + bus.imagen + '"><a href="">' + bus.nombre + '</a>';
         }
     });
-    if(seccion.innerHTML == ""){
+    if(carrusel.innerHTML == ""){
         let noResult = document.createElement("div");
         noResult.innerText = "No hay alumnos que tengan en su nombre: "+buscador.value;
         noResult.classList.add("noResult");
-        seccion.append(noResult);
+        carrusel.append(noResult);
     }
 
 };
     
+//Carrusel
+$(function(){
+    $('.carousel').carousel({
+        interval: 5000
+    })
 
+    $('.carousel-item').first().addClass('active');
+    $('.carousel-indicators > li').first().addClass('active');
+    $('#carousel').carousel();
+
+
+
+
+});
 
 
 
