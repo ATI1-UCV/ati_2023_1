@@ -1,11 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-	   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta charset="UTF-8">
 		<link rel="icon" href="http://www.ciens.ucv.ve/portalasig2/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="../css/style.css"  type="text/css">
 		<link rel="stylesheet" href="../css/perfil.css"  type="text/css">
+		<link rel="stylesheet" href="../css/style.css"  type="text/css">
 		<script type="text/javascript" src="./datos/config.json"></script>
 		<script type="text/javascript" src="./datos/perfil.json"></script>
 		<title></title>
@@ -13,26 +14,31 @@
 	<body>
 	    <header>
 			<nav>
-				<ul>
-					<li class="logo"></li>
-					<li class="saludo"></li>
-					<li class="busqueda"></li>
+				<ul class="row">
+					<li class="logo     col"></li>
+					<li class="saludo   col"></li>
+					<li class="busqueda col"></li>
 				</ul>	
 			</nav> 
 	    </header>
 	    <section>
-	        <div id="imagenFondo">
-				
+			<div class="row">
+				<div class="col-3">
+					<div id="imagenFondo"></div>
+				</div>
+				<div id="tarjeta" class="col-8">
+					<h1></h1>
+					<p></p>
+					<table></table>
+					<p></p>
+				</div>
 			</div>
-			<div id="tarjeta">
-				<h1></h1>
-				<p></p>
-				<table></table>
-				<p></p>
-			</div>
+			
+			
 	    </section>
 	    <footer>
 			<script src="js/index.js"></script>
+			<script src="bootstrap/js/bootstrap.min.js"></script>
 	    </footer>
 	</body>
 </html>
