@@ -1,0 +1,38 @@
+.divFoto, .divPerfil{
+    float:left;
+}
+.divPerfil{
+    width: 60%; 
+    padding: 20px;
+    border-style: solid;
+    box-shadow: 10px 15px rgb(142, 155, 155);
+}
+#fotoPerfil{
+    max-height: 40vh;
+    max-width: 30vh;
+    border-radius: 50px 0 0 0;
+}
+#lenguajes{
+    font-weight: bold;
+}
+.divPerfil h1{
+    color:orange; 
+    font-family:verdana; 
+    font-size: 40px;
+}
+.divPerfil p{
+    font-family:Verdana;
+    font-style: italic;
+}
+.divPerfil ul li{
+    margin: 5px 0;
+}
+.divPerfil ul{
+    list-style-type:none;
+}
+#info_contacto a:link{
+    color: orange;
+}
+#info_contacto a:focus, #info_contacto a:visited {
+    color: red;
+}

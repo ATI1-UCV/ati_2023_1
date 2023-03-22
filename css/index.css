@@ -1,16 +1,16 @@
 section{
    position: relative;
    margin:20px; 
-}
+ }
  
-section ul{
+ section ul{
    color: #86b1ef;
    font-family:arial;
     font-size:1.5vw;
    text-align: center;
-}
+ }
  
-section ul li { 
+ section ul li { 
    display:flex;
    flex-direction: column; 
    float:left; 
@@ -23,33 +23,33 @@ section ul li {
    border-right: #a5a7aa solid 1px; 
    border-bottom: #a5a7aa solid 1px; 
     overflow: hidden; 
-}
+ }
  
-section ul li img {
-   width:140px; 
+ section ul li img {
+    width:140px; 
    height:140px;	
-   object-fit: contain;
-}
+    object-fit: contain;
+ }
  
-section ul li:hover {
+ section ul li:hover {
    background-color:#99c5dd;
    transform:scale(1.05) rotate(5deg);
-}
+ }
        
-section ul li a {
-   font-family:arial;
-   font-size:10pt;
-   color: #86b1ef!important;
-   text-decoration:none;
-}
+ section ul li a {
+    font-family:arial;
+    font-size:10pt;
+    color: #86b1ef!important;
+     text-decoration:none;
+ }
  
-section ul li a:link, section ul li a:visited {
-   color: #68a0d9;
-}
+ section ul li a:link, section ul li a:visited {
+    color: #68a0d9;
+ }
  
-section ul li a:hover { 
-   color: #68a0d8;
-}
+ section ul li a:hover { 
+    color: #68a0d8;
+ }
  
  
  @media (min-width: 768px) {
@@ -126,12 +126,3 @@ section ul li a:hover {
   .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2368a0d9' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
   }
-.msg_error {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   text-align: center;
-   color: #68a0d9;
-   font-size: 1.5rem;
-}
