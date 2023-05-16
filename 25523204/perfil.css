@@ -1,0 +1,41 @@
+.section {
+	font-family: Cambria, 'Times New Roman', serif;
+}
+
+h1 {
+	color: #6852ff;
+	font-size: 2rem;
+}
+
+.profile-box {
+	margin-top: 2rem;
+	border: 2px solid #ccc;
+	box-shadow: 9px 8px 4px rgba(0, 0, 0, 0.3);
+	padding: 20px;
+	width: 90%;
+	/* height: 200px; */
+}
+
+.profile-box p {
+	padding: 8px;
+	font-size: 1rem;
+}
+
+.profile-image {
+	border-top-left-radius: 10px;
+	width: 200px;
+	margin-right: 20px;
+	border: 2px solid #000;
+}
+
+a:link {
+	color: orange;
+}
+
+a:visited {
+	color: red;
+}
+
+.text_link {
+	font-weight: bold;
+}
