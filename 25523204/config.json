@@ -1,0 +1,9 @@
+{
+	"saludo": "Hola, [nombre]",
+	"color_favorito": "Mi color favorito es:",
+	"libro_favorito": "Mi libro favorito es:",
+	"estilo_musica": "Estilo de música preferida es:",
+	"videojuegos": "Mis Video juegos favoritos son:",
+	"lenguajes_aprendidos": "Lenguajes aprendidos:",
+	"como_comunicarse": "Si necesitan comunicarse conmigo me pueden escribir a: [email]"
+}
