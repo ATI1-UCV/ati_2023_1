@@ -6,15 +6,23 @@
 		<link rel="icon" href="http://www.ciens.ucv.ve/portalasig2/favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
 		<link rel="stylesheet" href="css/index.css" type="text/css" />
+		<link href="css/bootstrap.css" rel="stylesheet" />
 		<script type="text/javascript" src="datos/index.json"></script>
 		<script src="conf/configES.json"></script>
+		<script
+			src="https://code.jquery.com/jquery-3.6.4.js"
+			integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+			crossorigin="anonymous"
+		></script>
+		<script src="js/bootstrap.js"></script>
+		<title></title>
 	</head>
 	<body>
 		<header>
 			<nav>
 				<ul>
 					<li class="logo"></li>
-					<li class="saludo">Jesus Hernandez</li>
+					<li class="saludo"></li>
 					<li class="busqueda">
 						<form>
 							<input type="text" />
@@ -24,8 +32,24 @@
 				</ul>
 			</nav>
 		</header>
-		<section>
-			<ul></ul>
+		<section class="container">
+			<div id="persons" class="carousel slide" data-ride="carousel">
+				<a class="carousel-control-prev col-1" style="left: -90px" href="#persons" role="button" data-slide="prev">
+					<span class="arrow-left"><</span>
+				</a>
+
+				<ul class="carousel-inner row" role="listbox"></ul>
+
+				<a
+					class="carousel-control-next col-1"
+					style="right: -90px"
+					href="#persons"
+					role=" button"
+					data-slide="next"
+				>
+					<span class="arrow-right">></span>
+				</a>
+			</div>
 		</section>
 		<footer></footer>
 		<script src="js/index.js"></script>

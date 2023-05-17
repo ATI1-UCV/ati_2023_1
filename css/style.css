@@ -12,7 +12,7 @@ body {
 }
 
 header {
-	height: 62px;
+	height: 60px;
 	top: 0;
 	position: relative;
 	background-color: #86b1ef;
@@ -20,17 +20,21 @@ header {
 
 nav ul {
 	list-style-type: none;
-	margin: 10px;
 	padding: 0;
 	overflow: hidden;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	justify-content: space-between;
 }
 
 nav ul li {
 	float: left;
 	border-right: 1px solid #fff;
-	line-height: 58px;
 	padding: 3px 5px 3px 5px;
 	color: white;
+	align-items: center;
+	display: flex;
 }
 
 nav ul li:last-child {
@@ -64,23 +68,25 @@ nav ul li a:visited {
 	float: right;
 }
 
+.busqueda form {
+	display: flex;
+}
+
 .busqueda input[type='button'] {
-	padding: 6px;
 	background: #f5f7f9;
+	padding: 2px;
 	border: none;
 	cursor: pointer;
 	color: #86b1ef;
 }
 
 .busqueda input[type='text'] {
-	padding: 6px;
 	border: none;
 	margin-right: 10px;
 }
 
 section {
 	width: 95%;
-	margin-top: 10px;
 	margin-bottom: 80px;
 	margin-left: auto;
 	margin-right: auto;
