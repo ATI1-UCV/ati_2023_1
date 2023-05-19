@@ -2,9 +2,17 @@
 	font-family: Cambria, 'Times New Roman', serif;
 }
 
-h1 {
+._container {
+	margin-top: 1rem;
+	display: flex;
+	justify-content: center;
+}
+
+#nombre {
+	font-size: 4rem;
+	font-family: 'Roboto', 'Arial', sans-serif;
+	margin: 1rem;
 	color: #6852ff;
-	font-size: 2rem;
 }
 
 .profile-box {
@@ -12,8 +20,16 @@ h1 {
 	border: 2px solid #ccc;
 	box-shadow: 9px 8px 4px rgba(0, 0, 0, 0.3);
 	padding: 20px;
-	width: 90%;
-	/* height: 200px; */
+	/* width: 200px; */
+}
+
+.profile-info {
+	border-style: solid;
+	border-width: 2px;
+	box-shadow: 4px 3px 3px rgb(0, 0, 0, 0.8);
+	padding: 1rem;
+	padding-top: 0.5rem;
+	/* overflow-y: auto;  */
 }
 
 .profile-box p {
@@ -21,11 +37,10 @@ h1 {
 	font-size: 1rem;
 }
 
-.profile-image {
-	border-top-left-radius: 10px;
-	width: 200px;
-	margin-right: 20px;
-	border: 2px solid #000;
+#profile-image {
+	width: 100%;
+	border: 2px solid rgb(0, 0, 0, 0.2);
+	border-end-end-radius: 30%;
 }
 
 a:link {
@@ -38,4 +53,56 @@ a:visited {
 
 .text_link {
 	font-weight: bold;
+}
+
+#link {
+	font-weight: bold;
+}
+
+#link a {
+	padding-left: 1rem;
+}
+
+.logo {
+	font-size: 2.25vw;
+}
+
+.lenguajes {
+	font-weight: bold;
+}
+
+figure {
+	position: relative;
+	margin-top: -133%;
+}
+
+path {
+	fill: rgb(194, 194, 194);
+	transition: all 1s ease;
+	transform: translateY(-100%);
+	opacity: 50%;
+}
+
+#text-svg {
+	font-weight: bold;
+	font-size: 1rem;
+	margin-top: -130%;
+	transform: translateY(-60%);
+	transition: all 1s ease;
+	opacity: 0;
+}
+
+@media screen and (max-width: 767px) {
+	#nombre {
+		font-size: 1em;
+		font-family: 'Roboto', 'Arial', sans-serif;
+		color: #6852ff;
+	}
+
+	.profile-info {
+		margin-top: 60%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
 }
