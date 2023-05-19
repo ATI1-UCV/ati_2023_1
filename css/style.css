@@ -75,7 +75,7 @@ section {
 
 footer {
 	width: 100%;
-	/* position: fixed; */
+	position: fixed;
 	bottom: 0;
 	padding: 1rem;
 	background-color: #86b1ef;
