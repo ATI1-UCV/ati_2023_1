@@ -1,0 +1,36 @@
+.container {
+    display: inline-block;
+}
+
+.img-div {
+    float: left;
+    width: 30%;
+}
+
+.content-div {
+    float: left;
+    width: 30%;
+    box-shadow: 4px 4px 0px 2px gray;
+    border: 1px solid black;
+}
+
+img {
+    width: 50%;
+    border-top-left-radius: 10%;
+}
+
+h2 {
+    color: brown;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a:link {
+    color: orange;
+}
+
+a:visited {
+    color: red;
+}
