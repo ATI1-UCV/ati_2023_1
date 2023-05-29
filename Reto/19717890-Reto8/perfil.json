@@ -1,0 +1,13 @@
+{
+	"nombre":"Humberto Campos",
+	"descripcion":"Soy estudiante de licenciatura en computación de la Universidad Central de Venezuela, actualmente cursando mis últimos semestres.",
+	"color":"Rojo",
+	"libro":"No tengo ningun libro favorito",
+	"musica":"El merengue y la Salsa",
+	"video_juego":"Aquellos del Estilo FPS",
+	"lenguajes":["C", "C++", "Java", "Python"],
+	"email":"humberto.j.c.g@gmail.com",
+	"CI":"19717890",
+	"genero":"Masculino",
+	"fecha_nacimiento":"15/03/1990"
+}
