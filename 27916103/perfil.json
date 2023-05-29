@@ -1,0 +1,30 @@
+{
+    "nombre": "Heyzel Moncada",
+    "descripcion": "Soy un estudiante de Computación de la UCV actualmente cursando la materia de ATI. Me gustan los videojuegos y las peliculas.",
+    "color": "Azul",
+    "libro": "Angeles y Demonios",
+    "musica": "Rock",
+    "video_juego": [
+        "Zelda",
+        "Mario",
+        "Counter Strike"
+    ],
+    "lenguajes": [
+        "Python",
+        "Java",
+        "JavaScript",
+        "C++",
+        "C#",
+        "C",
+        "Haskell",
+        "Solidity"
+    ],
+    "email": "heyzelm7@gmail.com",
+    "ci": "27916103",
+    "genero": "masculino",
+    "fecha_nacimiento": {
+        "dia": "16",
+        "mes": "12",
+        "anio": "1999"
+    }
+  }
