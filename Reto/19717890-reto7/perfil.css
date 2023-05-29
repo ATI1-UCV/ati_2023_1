@@ -1,0 +1,51 @@
+		.main
+		{
+			margin-top: 10px;
+			display: flex;
+		}
+		h1
+		{
+			font-size: 58px; 
+			color: darkblue;
+		}
+		#div-izquierdo
+		{
+			width: 30%;
+		}
+		#img-izquierda
+		{
+			margin-left: 10px;
+			width: 100%;
+			border-radius: 40px 0px 0px 0px;
+		}
+		#section-derecho
+		{
+			width: 70%;
+			margin: 0px 15px 0px 15px;
+			border:1px solid black; 
+			padding-left: 10px; 
+			padding-right: 10px;
+			box-shadow: 5px 5px 5px gray, -1px -1px 5px gray;
+
+		}
+		.parrafo-derecho
+		{
+			font-size: 120% ;
+			font-weight: 500;
+		}
+		#span-fontRed
+		{
+			color:red;
+		}	
+		#anchor-color
+		{
+			color: orange;
+		}
+		#anchor-color:hover
+		{
+			color: blue;
+		}
+		#anchor-color:visited
+		{
+			color: red;
+		}
